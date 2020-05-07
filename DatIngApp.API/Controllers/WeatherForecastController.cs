@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DatIngApp.API;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace DatIngApp.API.Controllers
+namespace DatingApp.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

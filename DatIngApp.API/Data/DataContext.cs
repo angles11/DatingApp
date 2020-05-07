@@ -1,11 +1,12 @@
-﻿using DatIngApp.API.Models;
+﻿
+using DatingApp.API.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DatIngApp.API.Data
+namespace DatingApp.API.Data
 {
     public class DataContext : DbContext
     {
@@ -16,6 +17,6 @@ namespace DatIngApp.API.Data
             _options = options;
         }
 
-        public DbSet<Value> Values{ get; set; }
+        public DbSet<User> MyProperty { get; set; }
     }
 }

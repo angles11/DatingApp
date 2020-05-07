@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace DatIngApp.API.Migrations
+namespace DatingApp.API.Migrations
 {
     public partial class InitialCreate : Migration
     {
