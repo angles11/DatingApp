@@ -17,6 +17,6 @@ namespace DatingApp.API.Data
             _options = options;
         }
 
-        public DbSet<User> MyProperty { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
