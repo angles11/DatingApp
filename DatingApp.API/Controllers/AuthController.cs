@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace DatingApp.API.Controllers
 {
-    
+
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -30,6 +30,8 @@ namespace DatingApp.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
+
+
             userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
 
             if (await _authRepository.UserExists(userForRegisterDto.Username))
@@ -48,7 +50,7 @@ namespace DatingApp.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
-           
+
             var user = await _authRepository.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
 
             if (user == null)
