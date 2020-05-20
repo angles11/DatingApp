@@ -11,5 +11,6 @@ export class PreventUnsavedChanges
         'Are you sure yo want to continue? Any unsaved changes will be lost'
       );
     }
+    return true;
   }
 }
